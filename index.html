@@ -1,0 +1,149 @@
+</!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leather Shoes</title>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <!-- POPPER JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="public/css/leather_shoes.css">
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <div id="header">     
+            <div class="container">
+                <div id="storeLogo">
+                    <a href="http://everthreadsandbox.com">
+                        <img src="public/images/store_logo.png">
+                    </a>
+                </div>
+                <div id="headerShortcuts" class="ui-buttonset">
+                    <a href="http://everthreadsandbox.com/shopping_cart.php">
+                        <span>CART CONTENTS</span>
+                    </a>
+                    <a href="http://everthreadsandbox.com/checkout_shipping.php">
+                        <span>CHECKOUT</span>
+                    </a>
+                    <a href="http://everthreadsandbox.com/account.php">
+                        <span>MY ACCOUNT</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <main class="container-fluid">
+            <div class="row">       
+               
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img id="product" src="public/images/products/default_shoe_img.png" />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <img id="love" class="favorite-heart" src="public/images/love1.png">
+                    <h2>Men's Leather Shoe</h2>
+                    <br>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus vestibulum diam ac semper. Sed ullamcorper porttitor
+                        dignissim. 
+                    </div>
+                    <br>
+                    <br>
+                    <div class="tab-panel">
+                        <ul class="nav nav-tabs flex-container">
+                            <li class="active">
+                                <a href="#leather">Leather</a>
+                            </li>
+                            <li>
+                                <a href="#suede">Suede</a>
+                            </li>
+                            <li>
+                                <a href="#shoelace">Laces</a>
+                            </li>
+                            <li>
+                                <a href="#eyelets">Eyelets</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content">
+
+                            <!-- LEATHER SELECTIONS PANEL -->
+                            <div id="leather" class="tab-pane fade in active">
+                                <br>
+                                <div class="options-container">
+                                    <div data-target="o1" data-color="1" class="item-color-option option-black">
+                                    </div>
+                                    
+                                    <div data-target="o1" data-color="2" class="item-color-option option-dark-brown active">                                 
+                                    </div>
+                                    
+                                    <div data-target="o1" data-color="3" class="item-color-option option-light-brown">
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <!-- SUEDE SELECTIONS PANEL -->
+                            <div id="suede" class="tab-pane fade">
+                                <br>
+                                <div class="options-container">
+                                    <div data-target="o2" data-color="1" class="item-color-option option-black active"></div>
+
+                                    <div data-target="o2" data-color="2" class="item-color-option option-dark-brown"></div>
+
+                                    <div data-target="o2" data-color="3" class="item-color-option option-light-brown"></div>
+                                </div>
+                            </div>
+
+                            <!-- EYELETS SELECTIONS PANEL -->
+                            <div id="eyelets" class="tab-pane fade">
+                                <br>
+                                <div class="options-container"> 
+                                    <div data-target="o3" data-color="1" class="item-color-option option-black"></div>
+
+                                    <div data-target="o3" data-color="2" class="item-color-option option-dark-brown active"></div>
+
+                                    <div data-target="o3" data-color="3" class="item-color-option option-light-brown"></div>
+                                </div>
+                            </div>
+
+                            <!-- SHOELACE SELECTIONS PANEL -->
+                            <div id="shoelace" class="tab-pane fade">
+                                <br>
+                                <div class="options-container">
+                                    <div data-target="o4" data-color="1" class="item-color-option option-black active"></div>
+
+                                    <div data-target="o4" data-color="2" class="item-color-option option-dark-brown"></div>
+
+                                    <div data-target="o4" data-color="3" class="item-color-option option-light-brown"></div>
+                                </div>
+                            </div>
+
+                        </div><!-- end .tab-content -->
+                    </div><!-- end .tab-panel -->
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="public/js/leather_shoes.js"></script>
+    
+</body>
+
+</html>
