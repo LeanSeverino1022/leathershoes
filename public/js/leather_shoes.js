@@ -58,21 +58,6 @@ $(document).ready(function () {
             return optionsRequest(jQuery);
     });
 
-    // eyelets
-    $('#eyelets .options-container').on('click', '.item-color-option', function() {
-
-            if( $(this).hasClass('active') ) {
-                return;
-            }
-            
-            // $('.nav-list li.active').removeClass('active');
-            $(".item-color-option[data-target='o3']").removeClass('active');
-
-            $(this).addClass('active');
-
-            return optionsRequest(jQuery);
-    });
-
     // shoelace
     $('#shoelace .options-container').on('click', '.item-color-option', function() {
 
@@ -92,8 +77,9 @@ $(document).ready(function () {
 
 
         const o1 = $(".item-color-option.active[data-target='o1']").data().color;  //leather          
-        const o2 = $(".item-color-option.active[data-target='o2']").data().color;  //suede          
-        const o3 = $(".item-color-option.active[data-target='o3']").data().color; //eyelets
+        const o2 = $(".item-color-option.active[data-target='o2']").data().color;  //suede    
+        //for now, as per instruction, eyelet should match leather
+        const o3 = o1; //eyelets
         const o4 = $(".item-color-option.active[data-target='o4']").data().color; //laces
 
         // if a request already exists, then abort it to avoid spamming
