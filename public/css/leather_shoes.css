@@ -57,9 +57,11 @@ HEADER STYLES
 /****************** 
 MAIN CONTENT STYLES 
 *******************/
+
+
 img#product {
-    height: calc(100vh - 90px);  /* 88px is header height */  
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 .description {
@@ -113,21 +115,29 @@ img#product {
 
 /**** COLOR OPTIONS ****/
 
-.item-color-option {
+
+.item-color-option {    
     display: inline-block;
     height: 50px;
-    width: 50px;    
-   
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
+    width: 50px;  
     margin: 5px;
     cursor: pointer;
     border: 2px solid #fff;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.item-color-option img {  
+    width: 100%;
+    height: auto;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
 }
 
 .item-color-option.active {
-    border: 3px solid #333;
+    border-color:#333;
 }
 
 .option-black {
@@ -141,4 +151,5 @@ img#product {
 .option-light-brown {
     background-color: #ca3007;
 }
+
 
